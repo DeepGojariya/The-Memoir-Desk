@@ -1,0 +1,6 @@
+{
+  "name": "Wedding Digital Scrapbook",
+  "description": "An interactive digital wedding scrapbook with drag-and-drop polaroid memories, beautiful chapter timelines, elegant guest notes, and interactive stickers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

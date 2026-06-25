@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Great+Vibes&family=Caveat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Cinzel", "Playfair Display", serif;
+  --font-cursive: "Great Vibes", cursive;
+  --font-handwritten: "Caveat", cursive;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer utilities {
+  .vintage-paper {
+    background-color: #fcf8f2;
+    background-image: 
+      radial-gradient(#eadaaf 1px, transparent 0),
+      radial-gradient(#eadaaf 1px, transparent 0);
+    background-size: 16px 16px;
+    background-position: 0 0, 8px 8px;
+  }
+  
+  .notebook-ruler {
+    background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 100% 24px;
+  }
+}
+
+/* Custom shadow effects for stacked files */
+.polaroid-shadow {
+  box-shadow: 0 4px 15px rgba(50, 40, 30, 0.12), 0 2px 5px rgba(50, 40, 30, 0.08);
+}
+
+.tape-top {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 24px;
+  background-color: rgba(246, 224, 181, 0.55);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+  backdrop-filter: blur(1px);
+  border-left: 3px dashed rgba(0,0,0,0.05);
+  border-right: 3px dashed rgba(0,0,0,0.05);
+}
+
+.tape-angle-left {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  transform: rotate(-35deg);
+  width: 70px;
+  height: 22px;
+  background-color: rgba(246, 224, 181, 0.45);
+  backdrop-filter: blur(1px);
+  border-left: 2px dashed rgba(0,0,0,0.05);
+  border-right: 2px dashed rgba(0,0,0,0.05);
+}
+
+.tape-angle-right {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  transform: rotate(35deg);
+  width: 70px;
+  height: 22px;
+  background-color: rgba(246, 224, 181, 0.45);
+  backdrop-filter: blur(1px);
+  border-left: 2px dashed rgba(0,0,0,0.05);
+  border-right: 2px dashed rgba(0,0,0,0.05);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4decb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cdc5ad;
+}
+
